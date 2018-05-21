@@ -1,5 +1,3 @@
-import random
-
 def getWord():
     words = ['safe', 'courage', 'offer', 'remember', 'consider', 'love', 'speak', 'create', 'open',
              'spend', 'reach', 'remain', 'suggest', 'appear', 'develop', 'python', 'agree', 'prepare',

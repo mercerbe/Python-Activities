@@ -16,7 +16,7 @@ def main():
     adjectives.append(input('Enter another adjective: '))
     pastPart = []
     pastPart.append(input('Enter a past participle: '))
-    pastPart.append(input('Enter another past participle :'))
+    pastPart.append(input('Enter another past pastParticiple :'))
 
     MadLib = story.format(command, command, pluralNoun, location, animal, adjectives[0],
                           adjectives[1], pastPart[0], pastPart[1])

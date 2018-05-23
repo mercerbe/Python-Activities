@@ -12,7 +12,7 @@ def main():
     rolling = True
     while rolling:
         rollAgain = input("Let's get rolling! R=Roll, Q=Quit. ")
-        if rollAgain.lower() != "q":
+        if rollAgain.lower() != 'q':
             numberRolled = roll(sides)
             print("You Rolled A " + str(numberRolled))
         else:

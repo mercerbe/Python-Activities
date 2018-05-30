@@ -1,3 +1,7 @@
+import random
+import sys
+import string
+
 def getWord():
     words = ['safe', 'courage', 'offer', 'remember', 'consider', 'love', 'speak', 'create', 'open',
              'spend', 'reach', 'remain', 'suggest', 'appear', 'develop', 'python', 'agree', 'prepare',
@@ -17,15 +21,15 @@ def check(word,guesses,guess):
         if letter == guess:
             matches += 1
     if matches > 1:
-        print 'Correct! The word contains',matches,'"' + guess + '"' + 's'
+        print 'Correct! The word contains',matches,'"',guess,'"' + 's'
     elif matches == 1:
-        print('Correct! the word contains the letter "' + guesses + '"')
+        print('Correct! the word contains the letter',guesses,'"')
     else:
         print('Incorrect, the word does not contain the letter: "' + guess + '"')
     return status
 
 def main():
-    player = input("Let's start an adventure! What is your name? ")
+    player = input("Let's start playing! What is your name? ")
     print "Hello ", player,"!"
     word = getWord()
     guesses = []
